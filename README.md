@@ -9,4 +9,4 @@
 ### 回溯法
 ### 动态规划贪婪算法
 ### 其它
-1. 单例(problems/p01_sinleton.py)
+1. [单例](problems/p01_sinleton.py)
