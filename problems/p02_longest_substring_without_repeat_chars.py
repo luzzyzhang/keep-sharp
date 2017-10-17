@@ -12,12 +12,5 @@ def len_of_longest_substring_brute_force(s):
 
 
 if __name__ == '__main__':
-    test1, expect1 = 'abcabcbb', 3  # 'abc'
-    test2, expect2 = 'bbbbb', 1  # 'b'
-    test3, expect3 = 'pwwkew', 3  # 'wke'
-    assert len_of_longest_substring_brute_force(test1) == expect1
-    assert len_of_longest_substring_brute_force(test2) == expect2
-    assert len_of_longest_substring_brute_force(test3) == expect3
-    long_string = ("lursenhsaqzomihhopmfffywxjxnbsgonzitmq"
-                   "loilduvkblansfvqdubahcupshobccrqrzd")
-    print(len_of_longest_substring_brute_force(long_string))
+    test, expect = 'abcabcbb', 3  # 'abc'
+    assert len_of_longest_substring_brute_force(test) == expect
