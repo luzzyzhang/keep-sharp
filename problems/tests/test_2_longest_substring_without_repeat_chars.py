@@ -11,7 +11,14 @@ long_string = ("lursenhsaqzomihhopmfffywxjxnbsgonzitmq"
                "loilduvkblansfvqdubahcupshobccrqrzd")
 
 test_params = [
+    ('', 0),
+    ('a', 1),
     ('abcabcbb', 3),
+    ('abcacfrar', 4),
+    ('acfrarabc', 4),
+    ('arabcacfr', 4),
+    ('aaabbbccc', 2),
+    ('abcdcba', 4),
     ('bbbbb', 1),
     ('pwwkew', 3),
     ('abcdef', 6),
