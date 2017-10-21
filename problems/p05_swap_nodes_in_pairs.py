@@ -2,7 +2,7 @@
 """
     Swap nodes in pairs
     ~~~~~~~~~~~~~~~~~~~
-    pre-->a-->b-->b.next to pre-->b-->a-->b.next
+    https://leetcode.com/problems/swap-nodes-in-pairs/description/
 """
 
 
@@ -12,6 +12,7 @@ class Node(object):
         self.next = None
 
 
+# pre-->a-->b-->b.next to pre-->b-->a-->b.next
 def swap_pairs(head):
     dummy = pre = Node()
     pre.next = head
