@@ -22,7 +22,7 @@ def reverse_linked_list_iteract(head):
 def reverse_linked_list_recusive(head):
     if head is None or head.next is None:
         return head
-    node = reverse_linked_list_iteract(head.next)
+    node = reverse_linked_list_recusive(head.next)
     head.next.next = head
     head.next = None
     return node
