@@ -27,8 +27,7 @@ def largest_number(nums):
         def compare(x, y):
             print(x, y)
             return 1 if y + x > x + y else -1
-        return ''.join(sorted([str(n) for n in nums],
-                       key=cmp_to_key(compare))).lstrip('0') or '0'
+        return ''.join(sorted([str(n) for n in nums], key=cmp_to_key(compare))).lstrip('0') or '0'  # noqa
 
 
 def test():
