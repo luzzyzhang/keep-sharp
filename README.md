@@ -9,6 +9,7 @@
 3. [成对交换链表节点](problems/p05_swap_nodes_in_pairs.py)
 4. [从尾到头打印链表](problems/p06_print_link_list_reverse.py)
 5. [两数相加](problems/p07_add_two_numbers.py)
+6. [两条链表求交点](problems/p08_intersection_of_two_linked_lists.py)
 ### 树和图相关问题
 ### 栈和队列类问题
 ### 查找和排序类问题
