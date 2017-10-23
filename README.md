@@ -20,3 +20,4 @@
 ### 动态规划贪婪算法
 ### 其它
 1. [单例](problems/p01_singleton.py)
+2. [斐波那契数列](problems/p11_fibonacci.py)
