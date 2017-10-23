@@ -5,6 +5,7 @@
 1. [最长不重复子字符串](problems/p02_longest_substring_without_repeat_chars.py)
 2. [最大数](problems/p09_largest_number.py)
 3. [查找数组峰值](problems/p12_find_peak_element.py)
+4. [合并数组保持顺序](problems/p13_merge_array_keep_order.py)
 
 ### 链表相关问题
 1. [反转单向链表](problems/p03_reverse_single_linked_list.py)
