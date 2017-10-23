@@ -13,6 +13,7 @@
 5. [两数相加](problems/p07_add_two_numbers.py)
 6. [两条链表求交点](problems/p08_intersection_of_two_linked_lists.py)
 ### 树和图相关问题
+1. [反转二叉树](problems/p10_invert_binary_tree.py)
 ### 栈和队列类问题
 ### 查找和排序类问题
 ### 回溯法
