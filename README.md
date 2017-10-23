@@ -9,6 +9,7 @@
 5. [最长相同字符子串](problems/p14_longest_consecutive_characters.py)
 6. [数组中重复的数字](problems/p15_duplicate_number_in_array.py)
 7. [不修改数组找出重复元素](problems/p16_find_duplicate_num_no_change_array.py)
+8. [二维排序数组中的查找](problems/p17_search_num_in_sorted_matrix.py)
 
 ### 链表相关问题
 1. [反转单向链表](problems/p03_reverse_single_linked_list.py)
