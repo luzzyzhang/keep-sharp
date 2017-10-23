@@ -28,4 +28,14 @@ class Solution:
         self.invert_tree(root.right)
         return root
 
-    # TODO Iterative
+    def iterative_invert_tree(self, root):
+        from collections import deque
+        queue = deque([root])
+        while queue:
+            current = queue.popleft()
+            current.left, current.right = current.right, current.left
+            if current.left is not None:
+                queue.append(current.left)
+            if current.right is not None:
+                queue.append(current.right)
+        return root
