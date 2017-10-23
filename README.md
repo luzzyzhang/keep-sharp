@@ -7,6 +7,7 @@
 1. [反转单向链表](problems/p03_reverse_single_linked_list.py)
 2. [合并两个有序链表](problems/p04_merge_two_sorted_link_lists.py)
 3. [成对交换链表节点](problems/p05_swap_nodes_in_pairs.py)
+4. [从尾到头打印链表](problems/p06_print_link_list_reverse.py)
 ### 树和图相关问题
 ### 栈和队列类问题
 ### 查找和排序类问题
