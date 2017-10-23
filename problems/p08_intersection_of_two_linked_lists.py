@@ -17,7 +17,7 @@ class ListNode(object):
         self.next = next
 
 
-# Approach one
+# Approach one: time complexity O(m+n), space complexity O(1)
 class GetIntersection(object):
     def get_intersection_node(self, headA, headB):
         """
@@ -34,7 +34,7 @@ class GetIntersection(object):
         return pa
 
 
-# Approach two
+# Approach two: time complexity O(m+n), space complexity O(1)
 class Solution2(object):
     def length_of_list(self, lst):
         length = 0
@@ -63,7 +63,8 @@ class Solution2(object):
         return headA
 
 
-# Approach three use hash table
+# Approach three use hash table:
+# time complexity O(m+n), space complexity O(m) or O(n)
 class Solution3(object):
     def get_intersection_node(self, headA, headB):
         seen = set()
