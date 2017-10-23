@@ -3,6 +3,8 @@
 
 ### 数组和字符串类
 1. [最长不重复子字符串](problems/p02_longest_substring_without_repeat_chars.py)
+2. [最大数](problems/p09_largest_number.py)
+
 ### 链表相关问题
 1. [反转单向链表](problems/p03_reverse_single_linked_list.py)
 2. [合并两个有序链表](problems/p04_merge_two_sorted_link_lists.py)
