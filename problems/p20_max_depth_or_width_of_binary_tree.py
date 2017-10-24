@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+"""
+    Maximum width of binary tree
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    https://leetcode.com/problems/maximum-width-of-binary-tree/description/
+"""
 
 
 class Node(object):

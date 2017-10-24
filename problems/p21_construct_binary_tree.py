@@ -29,36 +29,36 @@ class Node:
         return ret
 
 
-def construct(pre_orders, in_orders):
-    if (not pre_orders) or (not in_orders):
+def construct(preorders, inorders):
+    if (not preorders) or (not inorders):
         return None
 
-    root_value = pre_orders[0]
+    root_value = preorders[0]
     root = Node(root_value)
-    if (pre_orders == in_orders) and len(pre_orders) == 1:
+    if (preorders == inorders) and len(preorders) == 1:
         return root
 
     try:
-        root_index = in_orders.index(root_value)
+        root_index = inorders.index(root_value)
     except Exception as e:
         raise e
 
     left_len = root_index
 
     if left_len > 0:
-        root.left = construct(pre_orders[1:left_len+1],
-                              in_orders[:root_index])
+        root.left = construct(preorders[1:left_len+1],
+                              inorders[:root_index])
 
-    if left_len < len(pre_orders):
-        root.right = construct(pre_orders[left_len+1:],
-                               in_orders[root_index+1:])
+    if left_len < len(preorders):
+        root.right = construct(preorders[left_len+1:],
+                               inorders[root_index+1:])
 
     return root
 
 
 if __name__ == '__main__':
-    pre_orders = [1, 2, 4, 7, 3, 5, 6, 8]
-    in_orders = [4, 7, 2, 1, 5, 3, 8, 6]
+    preorders = [1, 2, 4, 7, 3, 5, 6, 8]
+    inorders = [4, 7, 2, 1, 5, 3, 8, 6]
 
-    root = construct(pre_orders, in_orders)
+    root = construct(preorders, inorders)
     print(root)
