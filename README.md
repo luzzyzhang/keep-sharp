@@ -29,6 +29,8 @@
 1. [两个栈实现一个队列](problems/p23_two_stack_build_queue.py)
 2. [两个队列实现一个栈](problems/p24_two_queue_build_stack.py)
 ### 查找和排序类问题
+1. [年龄排序](problems/p25_sort_ages.py)
+2. [旋转数组的最小数字](problems/p26_search_min_in_roate_numbers.py)
 ### 回溯法
 ### 动态规划贪婪算法
 ### 其它
