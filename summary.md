@@ -94,6 +94,26 @@
     # 如何避免闭包延迟绑定？
     ```
 
+6. 运行结果
+    ```python
+        class C:
+            name = 'foo'
+
+        c1 = C()
+        c2 = C()
+
+        c2.name = 'bar'
+        C.name = 'baz'
+
+        print('{}, {}, {}'.format(c1.name, c2.name, C.name))
+    ```
+
+7. 以下表达式区别
+
+    `[x * 2 for x in lst]`
+    `(x * 2 for x in lst)`
+    `{x * 2 for x in lst}`
+
 
 
 
