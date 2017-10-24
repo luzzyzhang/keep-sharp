@@ -32,7 +32,12 @@
 1. [年龄排序](problems/p25_sort_ages.py)
 2. [旋转数组的最小数字](problems/p26_search_min_in_roate_numbers.py)
 ### 回溯法
+1. [矩阵中的路径](problems/p27_has_specify_path_in_matrix.py)
+2. [机器人的运动范围](problems/p28_robot_moving_count.py)
+3. [格子添水问题](problems/p29_fill_water.py)
 ### 动态规划贪婪算法
+1. [剪绳子](problems/p30_cutting_rope_max_product.py)
+2. [找零钱](problems/p31_cutting_rope_max_product.py)
 ### 其它
 1. [单例](problems/p01_singleton.py)
 2. [斐波那契数列](problems/p11_fibonacci.py)
