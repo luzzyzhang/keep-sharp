@@ -23,6 +23,8 @@
 1. [反转二叉树](problems/p10_invert_binary_tree.py)
 2. [判断两棵二叉树是否相同](problems/p19_same_binary_tree.py)
 3. [二叉树最大深度和宽度](problems/p20_max_depth_or_width_of_binary_tree.py)
+4. [重建二叉树](problems/p21_construct_binary_tree.py)
+    
 ### 栈和队列类问题
 ### 查找和排序类问题
 ### 回溯法
