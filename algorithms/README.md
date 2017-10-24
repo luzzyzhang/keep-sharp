@@ -21,4 +21,7 @@
 |希尔排序|X|O(nlog^2n)|O(n^2)|O(1)|
 
 ## 查找
-1. [二分查找](traverse_binary_tree.py)
+1. [二分查找](bisection_algorithms.py)
+
+## 搜索
+1. [二叉树遍历](traverse_binary_tree.py)
