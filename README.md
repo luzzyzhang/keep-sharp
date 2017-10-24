@@ -25,8 +25,9 @@
 3. [二叉树最大深度和宽度](problems/p20_max_depth_or_width_of_binary_tree.py)
 4. [重建二叉树](problems/p21_construct_binary_tree.py)
 5. [二叉树中序遍历的下一个节点](problems/p22_get_binary_tree_next_node.py)
-    
 ### 栈和队列类问题
+1. [两个栈实现一个队列](problems/p23_two_stack_build_queue.py)
+2, [两个队列实现一个栈](problems/p24_two_queue_build_stack.py)
 ### 查找和排序类问题
 ### 回溯法
 ### 动态规划贪婪算法
