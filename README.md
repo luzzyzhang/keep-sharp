@@ -41,3 +41,4 @@
 ### 其它
 1. [单例](problems/p01_singleton.py)
 2. [斐波那契数列](problems/p11_fibonacci.py)
+3. [数值的整数次方](problems/p32_power.py)
