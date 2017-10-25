@@ -114,6 +114,22 @@
     `(x * 2 for x in lst)`
     `{x * 2 for x in lst}`
 
+8. 引用谜题
+    ```python
+        # Example 1
+        >>> x = 42
+        >>> y = x
+        >>> x = x + 1
+        >>> print(x)
+        >>> print(y)
+        # Example 2
+        >>> x = [1, 2, 3]
+        >>> y = x
+        >>> x[0] = 4
+        >>> print(x)
+        >>> print(y)
+    ```
+
 
 
 
