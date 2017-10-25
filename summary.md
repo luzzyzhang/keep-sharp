@@ -128,6 +128,12 @@
         >>> x[0] = 4
         >>> print(x)
         >>> print(y)
+        # Copy quiz
+        >>> x = ['foo', [1, 2, 3], 10.4]
+        >>> y = list(x)  # or x[:] copy
+        >>> y[1][0] = 4
+        >>> print(x)
+        >>> print(y)
     ```
 
 
