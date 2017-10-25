@@ -135,6 +135,18 @@
         >>> print(x)
         >>> print(y)
     ```
+    > Copying objects
+    - Trickier with mutable objects
+    - You have a list `a` you wish to copy to `b`
+        ```python
+        # Creating an alias not a copy
+        b = a  # a == b and a is b [id(a) == id(b)]
+        # Creating a shallow copy (all objects inside are aliases!)
+        b = a[:]  # a == b but a is not b
+        # Creating a deep copy (all objects inside are copies)
+        # Use the deepcopy() function in the copy module
+        b = copy.deepcopy(a)
+        ```
 
 
 
