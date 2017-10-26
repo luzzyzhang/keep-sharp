@@ -26,7 +26,7 @@ def power(base, exponent):
 # 使用公式，递归法实现
 # a^n = a^(n/2) * a^(n/2), n 为偶数；a^n = a^(n-1)/2 * a^(n-1)/2 * a，n 为奇数
 # 右移运算替代除以 2，位与运算替代求余（%）运算判断奇偶;提高运算效率
-def power_formula_recursive(base, exponent):
+def power_optimize(base, exponent):
     if base == 0:
         return 0
     if exponent == 0:
@@ -52,5 +52,5 @@ def power_abs_exponent(a, n):
 if __name__ == '__main__':
     print(power(2, 3))
     print(power(2, -3))
-    print(power_formula_recursive(2, 3))
-    print(power_formula_recursive(2, -3))
+    print(power_optimize(2, 3))
+    print(power_optimize(2, -3))
