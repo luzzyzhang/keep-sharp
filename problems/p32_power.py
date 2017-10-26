@@ -33,15 +33,15 @@ def power_formula_recursive(base, exponent):
         return 1
     abs_exponent = abs(exponent)
 
-    def power_abs_exponent(base, n):
+    def power_abs_exponent(a, n):
         if n == 0:
             return 1
         if n == 1:
-            return base
-        r = power_abs_exponent(base, n >> 1)
+            return a
+        r = power_abs_exponent(a, n >> 1)
         r *= r
         if n & 0x1 == 1:
-            r *= base
+            r *= a
         return r
 
     result = power_abs_exponent(base, abs_exponent)
