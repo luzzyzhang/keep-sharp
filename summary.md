@@ -148,6 +148,18 @@
         b = copy.deepcopy(a)
         ```
 
+9. 按如下规则给一组数字排序:正数在前，负数在后；正数从小到大，负数从大到小
+    ```python
+    # Example
+    lst = [5, 0, -1, 3, -2, -5, -10, 9, 8, 3]
+    expected = [0, 3, 3, 5, 8, 9, -1, -2, -5, -10]
+    # 方法1:
+    r = sorted(lst, key=lambda x: (x<0, x if x >= 0 else -x))
+    # 方法2:
+    r = sorted(x for x in lst if x >=0) + sorted((y for y in lst if y < 0), reverse=True)
+    # or
+    r = sorted(x for x in lst if x >=0) + sorted((y for y in lst if y < 0), key=lambda x: -x)
+    ```
 
 
 
