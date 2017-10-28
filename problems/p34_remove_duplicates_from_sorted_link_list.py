@@ -10,7 +10,7 @@
 from util import list_to_link
 
 
-# Solution 1
+# 删除重复节点(保留一个删除重复): 1 -> 2 -> 2 -> 3 to 1 -> 2 -> 3
 def delete_duplicates(head):
     current = head
     while current is not None and current.next is not None:
@@ -21,7 +21,7 @@ def delete_duplicates(head):
     return head
 
 
-# Solution 2
+# 删除重复节点(删除全部重复): 1 -> 2 -> 2 -> 3 to 1 -> 3
 def delete_duplicate_nodes(head):
     if head is None:
         return None
