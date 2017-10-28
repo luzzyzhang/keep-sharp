@@ -20,6 +20,7 @@
 5. [两数相加](problems/p07_add_two_numbers.py)
 6. [两条链表求交点](problems/p08_intersection_of_two_linked_lists.py)
 7. [删除链表节点](problems/p33_delete_linked_list_node.py)
+8. [删除链表中的重复节点](problems/p34_remove_duplicates_from_sorted_link_list.py)
 ### 树和图相关问题
 1. [反转二叉树](problems/p10_invert_binary_tree.py)
 2. [判断两棵二叉树是否相同](problems/p19_same_binary_tree.py)
