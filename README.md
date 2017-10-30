@@ -41,7 +41,7 @@
 ### 动态规划贪婪算法
 1. [剪绳子](problems/p30_cutting_rope_max_product.py)
 2. [找零钱](problems/p31_coin_change.py)
-3. [正则表达式匹配-动态规划解法](problems/p35_regex_match.py)
+3. [正则表达式匹配-动态规划解法](problems/p35_regex_match.py#L34)
 ### 其它
 1. [单例](problems/p01_singleton.py)
 2. [斐波那契数列](problems/p11_fibonacci.py)
