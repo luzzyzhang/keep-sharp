@@ -69,4 +69,5 @@ def ismatch_bottom_up_dp(string, pattern):
 if __name__ == '__main__':
     assert ismatch('aaa', 'ab*ac*a')
     assert not match('aaa', 'aa.a')
-    assert not ismatch('aaa', 'ab*a')
+    assert not ismatch_top_down_dp('aaa', 'ab*a')
+    assert not ismatch_bottom_up_dp('aaa', 'ab*a')
