@@ -77,3 +77,9 @@ if __name__ == '__main__':
     b = GooHoo()
     print(a, b)
     assert a is b
+    class A(Singleton):
+        pass
+    t = A()
+    m = A()
+    print(id(t), id(m))
+    assert t is m
