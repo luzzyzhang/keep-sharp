@@ -96,16 +96,16 @@
 
 6. 运行结果
     ```python
-        class C:
-            name = 'foo'
+    class C:
+        name = 'foo'
 
-        c1 = C()
-        c2 = C()
+    c1 = C()
+    c2 = C()
 
-        c2.name = 'bar'
-        C.name = 'baz'
+    c2.name = 'bar'
+    C.name = 'baz'
 
-        print('{}, {}, {}'.format(c1.name, c2.name, C.name))
+    print('{}, {}, {}'.format(c1.name, c2.name, C.name))
     ```
 
 7. 以下表达式区别
@@ -116,24 +116,24 @@
 
 8. 引用谜题
     ```python
-        # Example 1
-        >>> x = 42
-        >>> y = x
-        >>> x = x + 1
-        >>> print(x)
-        >>> print(y)
-        # Example 2
-        >>> x = [1, 2, 3]
-        >>> y = x
-        >>> x[0] = 4
-        >>> print(x)
-        >>> print(y)
-        # Copy quiz
-        >>> x = ['foo', [1, 2, 3], 10.4]
-        >>> y = list(x)  # or x[:] copy
-        >>> y[1][0] = 4
-        >>> print(x)
-        >>> print(y)
+    # Example 1
+    >>> x = 42
+    >>> y = x
+    >>> x = x + 1
+    >>> print(x)
+    >>> print(y)
+    # Example 2
+    >>> x = [1, 2, 3]
+    >>> y = x
+    >>> x[0] = 4
+    >>> print(x)
+    >>> print(y)
+    # Copy quiz
+    >>> x = ['foo', [1, 2, 3], 10.4]
+    >>> y = list(x)  # or x[:] copy
+    >>> y[1][0] = 4
+    >>> print(x)
+    >>> print(y)
     ```
     > Copying objects
     - Trickier with mutable objects
