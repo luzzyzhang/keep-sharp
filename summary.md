@@ -2,28 +2,28 @@
 
 1. 函数默认值初始化问题
 
-```python
-def foo(bar=[]):
-    bar.append('baz')
-    return '%s, %i' % (bar, id(bar))
+    ```python
+    def foo(bar=[]):
+        bar.append('baz')
+        return '%s, %i' % (bar, id(bar))
 
->>> foo()
-"['baz'], 4318961736"
->>> foo()
-"['baz', 'baz'], 4318961736"
->>> foo()
-"['baz', 'baz', 'baz'], 4318961736"
-# 每次调用 foo(), bar使用同一个 list 对象，修改如下
-def foo(bar=None):
-    if bar is None:
-        bar = []
-    bar.append('baz')
-    return bar
->>> foo()
-['baz']
->>> foo()
-['baz']
-```
+    >>> foo()
+    "['baz'], 4318961736"
+    >>> foo()
+    "['baz', 'baz'], 4318961736"
+    >>> foo()
+    "['baz', 'baz', 'baz'], 4318961736"
+    # 每次调用 foo(), bar使用同一个 list 对象，修改如下
+    def foo(bar=None):
+        if bar is None:
+            bar = []
+        bar.append('baz')
+        return bar
+    >>> foo()
+    ['baz']
+    >>> foo()
+    ['baz']
+    ```
 
 2. 类型属性查找问题
 
