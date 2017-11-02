@@ -7,8 +7,6 @@
     但"12e"、"1a3.14"、"1.2.3"、"+-5"及"12e+5.4"都不是
 """
 
-from unicodedata import numeric
-
 
 # 数字的格式可以用A[.[B]][e|EC]或者.B[e|EC]表示，其中A和C都是
 # 整数（可以有正负号，也可以没有），而B是一个无符号整数
@@ -49,6 +47,7 @@ def isnumeric(s):
     except ValueError:
         pass
     try:
+        from unicodedata import numeric
         numeric(s)
         return True
     except (TypeError, ValueError):
@@ -57,11 +56,11 @@ def isnumeric(s):
 
 
 if __name__ == '__main__':
-    # assert isnumeric('abc') is False
-    # assert isnumeric('-1.3') is True
-    # assert isnumeric('.3') is True
-    # assert isnumeric('四') is True
-    # assert is_numeric('-1.3') is True
-    # assert is_numeric('.3') is True
-    # assert is_numeric('abc') is False
-    print(is_numeric('1.2.3'))
+    assert isnumeric('abc') is False
+    assert isnumeric('-1.3') is True
+    assert isnumeric('.3') is True
+    assert isnumeric('四') is True
+    assert is_numeric('-1.3') is True
+    assert is_numeric('.3') is True
+    assert is_numeric('abc') is False
+    assert is_numeric('1.2.3') is False
