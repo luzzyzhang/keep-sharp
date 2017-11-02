@@ -15,11 +15,11 @@ from unicodedata import numeric
 # def isnumberic(string):
 #     if not string:
 #         return False
-# 
+#
 #     numeric = scan_integer(string)
 #     for index, char in enumerate(string):
-# 
-#     
+#
+#
 # def scan_integer(string):
 #     if string[0] == '+' or string[0] == '-':
 #         string = string[1:]
@@ -27,7 +27,6 @@ from unicodedata import numeric
 #         if char >= '0' and char <= '9':
 #             return True
 #     return False
-
 
 
 def isnumeric(s):
