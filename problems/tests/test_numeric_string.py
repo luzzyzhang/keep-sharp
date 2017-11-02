@@ -15,5 +15,5 @@ test_params = [
 
 @pytest.mark.parametrize('string, expected', test_params)
 def test_is_numeric_string(string, expected):
-    assert isnumeric(string) == expected
-    assert is_numeric(string) == expected
+    assert isnumeric(string) is expected
+    assert is_numeric(string) is expected
