@@ -12,21 +12,33 @@ from unicodedata import numeric
 
 # 数字的格式可以用A[.[B]][e|EC]或者.B[e|EC]表示，其中A和C都是
 # 整数（可以有正负号，也可以没有），而B是一个无符号整数
-# def isnumberic(string):
-#     if not string:
-#         return False
-#
-#     numeric = scan_integer(string)
-#     for index, char in enumerate(string):
-#
-#
-# def scan_integer(string):
-#     if string[0] == '+' or string[0] == '-':
-#         string = string[1:]
-#     for char in string:
-#         if char >= '0' and char <= '9':
-#             return True
-#     return False
+
+
+# ---------- Use Flags and iterate string ---------- #
+def is_numeric(string):
+    number = False
+    e = False
+    point = False
+    number_after_e = True
+    for index, char in enumerate(string):
+        if '0' <= char <= '9':
+            number = True
+            number_after_e = True
+        elif char == '.':
+            if e or point:
+                return False
+            point = True
+        elif char == 'e' or char == 'E':
+            if e or not number:
+                return False
+            number_after_e = False
+            e = True
+        elif char == '-' or char == '+':
+            if index != 0 and string[index-1] not in {'e', 'E'}:
+                return False
+        else:
+            return False
+    return number and number_after_e
 
 
 # ---------- 犯规解法😄  ---------- #
@@ -45,7 +57,11 @@ def isnumeric(s):
 
 
 if __name__ == '__main__':
-    assert isnumeric('abc') is False
-    assert isnumeric('-1.3') is True
-    assert isnumeric('.3') is True
-    assert isnumeric('四') is True
+    # assert isnumeric('abc') is False
+    # assert isnumeric('-1.3') is True
+    # assert isnumeric('.3') is True
+    # assert isnumeric('四') is True
+    # assert is_numeric('-1.3') is True
+    # assert is_numeric('.3') is True
+    # assert is_numeric('abc') is False
+    print(is_numeric('1.2.3'))

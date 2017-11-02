@@ -1,7 +1,7 @@
 
 import pytest
 
-from problems.p36_numberic_string import isnumeric
+from problems.p36_numberic_string import is_numeric, isnumeric
 
 
 test_params = [
@@ -16,3 +16,4 @@ test_params = [
 @pytest.mark.parametrize('string, expected', test_params)
 def test_is_numeric_string(string, expected):
     assert isnumeric(string) == expected
+    assert is_numeric(string) == expected
