@@ -29,6 +29,7 @@ from unicodedata import numeric
 #     return False
 
 
+# ---------- 犯规解法😄  ---------- #
 def isnumeric(s):
     try:
         float(s)
