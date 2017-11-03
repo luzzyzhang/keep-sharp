@@ -13,6 +13,7 @@
 9. [替换空格](problems/p18_replace_blanks_in_string.py)
 10. [正则表达式匹配](problems/p35_regex_match.py)
 11. [表示数值的字符串](problems/p36_numberic_string.py)
+12. [调整数组顺序使奇数位于偶数前面](problems/p37_reorder_odd_even_array.py)
 
 ### 链表相关问题
 1. [反转单向链表](problems/p03_reverse_single_linked_list.py)
