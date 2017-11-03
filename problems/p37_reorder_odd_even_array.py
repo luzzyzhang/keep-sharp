@@ -8,7 +8,9 @@
 
 
 def odd_even_reorder(lst):
-    return sorted(lst, key=lambda x: not x & 0x1)
+    # return sorted(lst, key=lambda x: not x & 0x1)
+    lst.sort(key=lambda x: not x & 0x1)   # stable sort *IN PLACE*
+    return lst
 
 
 def odd_even_reorder1(lst):
