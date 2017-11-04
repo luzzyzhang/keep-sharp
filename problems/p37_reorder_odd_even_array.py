@@ -38,6 +38,7 @@ def reorder_odd_even2(lst):
     return reorder(lst, is_even)
 
 
+# 通过传递不同的函数，完成不同的任务，不限与奇偶分组，func支持正负分组等
 def reorder(lst, func):
     begin, end = 0, len(lst) - 1
     while begin < end:
