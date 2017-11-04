@@ -31,4 +31,3 @@ if __name__ == '__main__':
     assert find_kth_tail_node(link, 6).data == 1
     assert find_kth_tail_node(link, 4).data == 3
     assert find_kth_tail_node(link, 100) is None
-
