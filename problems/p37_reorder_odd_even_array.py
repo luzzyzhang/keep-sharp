@@ -21,16 +21,37 @@ def odd_even_reorder1(lst):
 
 # 双指针法
 def reorder_odd_even(lst):
-    head, end = 0, len(lst)-1
+    begin, end = 0, len(lst)-1
 
-    while head < end:
-        while lst[head] & 0x1 == 1:
-            head += 1
+    while begin < end:
+        while lst[begin] & 0x1 == 1:
+            begin += 1
         while lst[end] & 0x1 == 0:
             end -= 1
-        if head < end:
-            head, end = end, head
+        if begin < end:
+            begin, end = end, begin
     return lst
+
+
+# 提高可扩展性
+def reorder_odd_even2(lst):
+    return reorder(lst, is_even)
+
+
+def reorder(lst, func):
+    begin, end = 0, len(lst) - 1
+    while begin < end:
+        while begin < end and not func(begin):
+            begin += 1
+        while begin < end and func(end):
+            end -= 1
+        if begin < end:
+            begin, end = end, begin
+    return lst
+
+
+def is_even(n):
+    return n & 0x1 == 0
 
 
 if __name__ == '__main__':
@@ -39,3 +60,4 @@ if __name__ == '__main__':
     assert odd_even_reorder(lst) == expect
     assert odd_even_reorder1(lst) == expect
     assert reorder_odd_even(lst) == expect
+    assert reorder_odd_even2(lst) == expect

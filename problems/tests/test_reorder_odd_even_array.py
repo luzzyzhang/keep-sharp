@@ -3,7 +3,8 @@ import pytest
 
 from problems.p37_reorder_odd_even_array import (odd_even_reorder,
                                                  odd_even_reorder1,
-                                                 reorder_odd_even)
+                                                 reorder_odd_even,
+                                                 reorder_odd_even2)
 
 
 test_params = [
@@ -20,3 +21,4 @@ def test_odd_even_array_reorder(array, expected):
     assert odd_even_reorder(array) == expected
     assert odd_even_reorder1(array) == expected
     assert reorder_odd_even(array) == expected
+    assert reorder_odd_even2(array) == expected
