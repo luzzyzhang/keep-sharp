@@ -24,8 +24,8 @@ def entry_node_of_loop(head):
         node = node.next
         num += 1
 
-    # ahead 先移动num个节点
     ahead = behind = head
+    # ahead 先移动num个节点
     for _ in range(num):
         ahead = ahead.next
     # 同时移动 ahead，behind
