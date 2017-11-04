@@ -13,7 +13,7 @@ class Node:
         self.right = right
 
 
-# 1. 树A中找到树B的根节点值一样的节点(递归遍历树)
+# 树A中找到树B的根节点值一样的节点(递归遍历树)
 def has_sub_tree(root1, root2):
     result = False
     if root1 and root2:
