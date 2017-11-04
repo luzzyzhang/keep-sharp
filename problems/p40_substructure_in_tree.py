@@ -48,7 +48,7 @@ def equal(value1, value2):
 
 if __name__ == '__main__':
     root1 = Node(
-        8,
+        value=8,
         left=Node(8, left=Node(9), right=Node(2, left=Node(4), right=Node(7))),
         right=Node(7)
     )
