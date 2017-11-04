@@ -25,6 +25,8 @@
 7. [删除链表节点](problems/p33_delete_linked_list_node.py)
 8. [删除链表中的重复节点](problems/p34_remove_duplicates_from_sorted_link_list.py)
 9. [链表中倒数第K个节点](problems/p38_find_kth_tail_node.py)
+10. [链表中环的入口节点](problems/p39_entry_node_in_list_loop.py)
+
 ### 树和图相关问题
 1. [反转二叉树](problems/p10_invert_binary_tree.py)
 2. [判断两棵二叉树是否相同](problems/p19_same_binary_tree.py)
