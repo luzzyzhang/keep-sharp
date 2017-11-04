@@ -19,7 +19,23 @@ def odd_even_reorder1(lst):
     return odd + even
 
 
+# 双指针法
+def reorder_odd_even(lst):
+    head, end = 0, len(lst)-1
+
+    while head < end:
+        while lst[head] & 0x1 == 1:
+            head += 1
+        while lst[end] & 0x1 == 0:
+            end -= 1
+        if head < end:
+            head, end = end, head
+    return lst
+
+
 if __name__ == '__main__':
     lst = [1, 2, 3, 4, 5, 6, 7, 8]
-    assert odd_even_reorder(lst) == [1, 3, 5, 7, 2, 4, 6, 8]
-    assert odd_even_reorder1(lst) == [1, 3, 5, 7, 2, 4, 6, 8]
+    expect = [1, 3, 5, 7, 2, 4, 6, 8]
+    assert odd_even_reorder(lst) == expect
+    assert odd_even_reorder1(lst) == expect
+    assert reorder_odd_even(lst) == expect

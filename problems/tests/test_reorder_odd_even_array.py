@@ -1,7 +1,9 @@
 
 import pytest
 
-from problems.p37_reorder_odd_even_array import odd_even_reorder, odd_even_reorder1  # noqa
+from problems.p37_reorder_odd_even_array import (odd_even_reorder,
+                                                 odd_even_reorder1,
+                                                 reorder_odd_even)
 
 
 test_params = [
@@ -17,3 +19,4 @@ test_params = [
 def test_odd_even_array_reorder(array, expected):
     assert odd_even_reorder(array) == expected
     assert odd_even_reorder1(array) == expected
+    assert reorder_odd_even(array) == expected
