@@ -53,6 +53,20 @@ def find_meet_node(head):
     return None
 
 
+# 引入额外存储空间记录访问过的节点，如果重复说明是入口节点
+def find_entry_node(head):
+    if not head or not head.next:
+        return None
+    seen = set()
+    while head:
+        if head not in seen:
+            seen.add(head)
+        else:
+            return head
+        head = head.next
+    return None
+
+
 if __name__ == '__main__':
     from util import Node
     node1 = Node(1)
@@ -68,3 +82,4 @@ if __name__ == '__main__':
     node5.next = node6
     node6.next = node3
     assert entry_node_of_loop(node1) == node3
+    assert find_entry_node(node1) == node3
