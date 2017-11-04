@@ -29,3 +29,6 @@ if __name__ == '__main__':
     link = list_to_link([1, 2, 3, 4, 5, 6])
     assert find_kth_tail_node(link, 1).data == 6
     assert find_kth_tail_node(link, 6).data == 1
+    assert find_kth_tail_node(link, 4).data == 3
+    assert find_kth_tail_node(link, 100) is None
+
