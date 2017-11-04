@@ -42,7 +42,8 @@ def is_sub_tree(root1, root2):
 
 # 判断浮点数是否相同（注意浮点数比较相等误差问题）
 def equal(value1, value2):
-    return True if abs(value1-value2) < 1e-06 else False
+    return abs(value1 - value2) < 1e-06
+    # return True if abs(value1-value2) < 1e-06 else False
 
 
 if __name__ == '__main__':
