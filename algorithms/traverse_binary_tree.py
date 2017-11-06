@@ -28,18 +28,19 @@ def bread_first_tranverse(root):
 
 
 # Deepth first Traverse
-def bfs_traverse(root):
+def dfs_traverse(root):
     if root is None:
         return None
     print(root.data)   # 前序
     if root.left is not None:
-        bfs_traverse(root.left)
+        dfs_traverse(root.left)
     # print(root.data)   # 中序
     if root.right is not None:
-        bfs_traverse(root.right)
+        dfs_traverse(root.right)
     # print(root.data)   # 后序
 
 
+# 迭代法前中后序遍历
 def pre_order_iterative(node):
     if node is None:
         return None
@@ -112,4 +113,4 @@ if __name__ == '__main__':
     assert list(pre_order_iterative(root)) == pre_orders
     assert list(in_order_iterative(root)) == in_orders
     assert list(post_order_iterative(root)) == post_orders
-    print(bfs_traverse(root))
+    print(dfs_traverse(root))
