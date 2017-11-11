@@ -20,7 +20,7 @@ def print_from_top_to_bottom(root):
     queue = deque([root])
     while queue:
         current = queue.popleft()
-        yield current.value
+        print(current.value)
         if current.left:
             queue.append(current.left)
         if current.right:
@@ -33,4 +33,5 @@ if __name__ == '__main__':
         left=Node(6, left=Node(5), right=Node(7)),
         right=Node(10, left=Node(9), right=Node(11))
     )
-    assert list(print_from_top_to_bottom(root)) == [8, 6, 10, 5, 7, 9, 11]
+    # expect [8, 6, 10, 5, 7, 9, 11]
+    print_from_top_to_bottom(root)
