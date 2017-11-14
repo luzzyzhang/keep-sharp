@@ -38,6 +38,8 @@
 7. [二叉树的镜像](problems/p41_mirror_binary_tree.py)
 8. [对称的二叉树](problems/p42_symmetrical_binary_tree.py)
 9. [打印二叉树](problems/p46_print_binary_tree.py)
+10. [二叉搜索树的后序遍历序列](problems/p47_sequence_of_binary_search_tree.py)
+
 ### 栈和队列类问题
 1. [两个栈实现一个队列](problems/p23_two_stack_build_queue.py)
 2. [两个队列实现一个栈](problems/p24_two_queue_build_stack.py)
