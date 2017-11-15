@@ -39,7 +39,7 @@
 8. [对称的二叉树](problems/p42_symmetrical_binary_tree.py)
 9. [打印二叉树](problems/p46_print_binary_tree.py)
 10. [二叉搜索树的后序遍历序列](problems/p47_sequence_of_binary_search_tree.py)
-11. [二叉树中为某一值得路径](problems/p48_path_sum_in_binary_tree.py)
+11. [二叉树中为某一值的路径](problems/p48_path_sum_in_binary_tree.py)
 
 ### 栈和队列类问题
 1. [两个栈实现一个队列](problems/p23_two_stack_build_queue.py)
