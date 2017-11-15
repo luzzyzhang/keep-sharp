@@ -39,4 +39,4 @@ if __name__ == '__main__':
     node10.left, node10.right = node5, node12
     node5.left, node5.right = node4, node7
     root = node10
-    print([i for i in path_sum(root, 22)])
+    assert path_sum(root, 22) == [[10, 5, 7], [10, 12]]
