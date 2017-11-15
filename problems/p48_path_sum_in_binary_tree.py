@@ -16,7 +16,7 @@ class Node:
         self.right = None
 
 
-# 1. 前序遍历二叉树(因为从root->leaf), 递归法，先分析只有一个根节点
+# 1. DFS: 前序遍历二叉树(因为从root->leaf), 递归法，先分析只有一个根节点
 def path_sum(root, target):
     if not root:
         return []
@@ -25,6 +25,13 @@ def path_sum(root, target):
     lefts = path_sum(root.left, target-root.val)
     rights = path_sum(root.right, target-root.val)
     return [[root.val] + path for path in lefts+rights]
+
+
+# 2. TODO Depth First Search use Stack -- 递归实质为栈调用(入栈，出栈)
+
+
+# 3. TODO Broad First Search use Queue
+
 
 
 if __name__ == '__main__':
