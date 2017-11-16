@@ -42,7 +42,20 @@ def path_sum_dfs_iterative(root, target):
             stack.append((current.left, path+[current.left.val]))
 
 
-# 3. TODO Broad First Search use Queue
+# 3. Broad First Search use Queue
+def path_sum_bfs(root, target):
+    from collections import deque
+    if not root:
+        return []
+    queue = deque([(root, [root.val])])
+    while queue:
+        node, path = queue.popleft()
+        if not node.left and not node.right and sum(path) == target:
+            yield path
+        if node.left:
+            queue.append((node.left, path+[node.left.val]))
+        if node.right:
+            queue.append((node.right, path+[node.right.val]))
 
 
 if __name__ == '__main__':
@@ -53,3 +66,4 @@ if __name__ == '__main__':
     expected = [[10, 5, 7], [10, 12]]
     assert path_sum(root, 22) == expected
     assert list(path_sum_dfs_iterative(root, 22)) == expected
+    assert list(path_sum_bfs(root, 22)) in (expected, expected[::-1])
