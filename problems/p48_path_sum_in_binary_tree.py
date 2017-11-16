@@ -33,13 +33,13 @@ def path_sum_dfs_iterative(root, target):
         return []
     stack = [(root, [root.val])]
     while stack:
-        current, lst = stack.pop()
-        if (not current.left and not current.right and sum(lst) == target):
-            yield lst
+        current, path = stack.pop()
+        if (not current.left and not current.right and sum(path) == target):
+            yield path
         if current.right:
-            stack.append((current.right, lst+[current.right.val]))
+            stack.append((current.right, path+[current.right.val]))
         if current.left:
-            stack.append((current.left, lst+[current.left.val]))
+            stack.append((current.left, path+[current.left.val]))
 
 
 # 3. TODO Broad First Search use Queue
