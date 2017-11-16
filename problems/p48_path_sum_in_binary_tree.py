@@ -28,10 +28,23 @@ def path_sum(root, target):
 
 
 # 2. TODO Depth First Search use Stack -- 递归实质为栈调用(入栈，出栈)
+def path_sum_dfs_iterative(root, target):
+    if not root:
+        return []
+    stack = [(root, [root.val])]
+    rv = []
+    while stack:
+        current, lst = stack.pop()
+        if (not current.left and not current.right and sum(lst) == target):
+            yield lst
+        if current.right:
+            stack.append((current.right, lst+[current.right.val]))
+        if current.left:
+            stack.append((current.left, lst+[current.left.val]))
+    return rv
 
 
 # 3. TODO Broad First Search use Queue
-
 
 
 if __name__ == '__main__':
@@ -39,4 +52,6 @@ if __name__ == '__main__':
     node10.left, node10.right = node5, node12
     node5.left, node5.right = node4, node7
     root = node10
-    assert path_sum(root, 22) == [[10, 5, 7], [10, 12]]
+    expected = [[10, 5, 7], [10, 12]]
+    assert path_sum(root, 22) == expected
+    assert list(path_sum_dfs_iterative(root, 22)) == expected
