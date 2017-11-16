@@ -27,7 +27,7 @@ def path_sum(root, target):
     return [[root.val] + path for path in lefts+rights]
 
 
-# 2. TODO Depth First Search use Stack -- 递归实质为栈调用(入栈，出栈)
+# 2. Depth First Search use Stack -- 递归实质为栈调用(入栈，出栈)
 def path_sum_dfs_iterative(root, target):
     if not root:
         return []
