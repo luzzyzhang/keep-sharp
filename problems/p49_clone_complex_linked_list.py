@@ -26,7 +26,7 @@ def clone_complex_link(head):
         node.next = copy_node
         copy_node.next = next_node
 
-        node = next_node  # or node = copy_node.next
+        node = next_node
 
     node = head
     while node is not None:
