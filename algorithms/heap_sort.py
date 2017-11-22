@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """可以使用内置 heapq 实现
    https://docs.python.org/3/library/heapq.html#basic-examples
-def heapsort(iterable):
+>>> def heapsort(iterable):
 ...     h = []
 ...     for value in iterable:
 ...         heappush(h, value)
