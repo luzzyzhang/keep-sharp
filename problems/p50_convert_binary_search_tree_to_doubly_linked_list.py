@@ -4,11 +4,12 @@
     ~~~~~~~~~~~~~~~~~~~~
     输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的双向链表。
     要求不能创建任何新的结点，只能调整树中结点指针的指向。
+    https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference
 """
 
 
 class Node:
-    """二叉搜索树结点
+    """结点
     """
     def __init__(self, x):
         self.val = x
@@ -16,24 +17,14 @@ class Node:
         self.right = None
 
     def __repr__(self):
-        return 'Node({!r}, {!r}, {!r})'.format(self.val, self.left, self.right)
-
-
-class LinkNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-    def __repr__(self):
-        return 'LinkNode({!r}, {!r}, {!r})'.format(self.val, self.left, self.right)
+        return 'Node({!r})'.format(self.val)
 
 
 def convert_bst_to_doubly_linked_list(root):
-    last_list_node = LinkNode(None)
+    last_list_node = [Node(None)]
     convert_node(root, last_list_node)
     # 返回双向链表的头结点
-    head = last_list_node
+    head = last_list_node[0]
     while head is not None and head.left is not None:
         head = head.left
     return head
@@ -48,13 +39,16 @@ def convert_node(bst_node, last_list_node):
     if current.left is not None:
         convert_node(current.left, last_list_node)
 
-    current.left = last_list_node
-    if last_list_node is not None:
-        last_list_node.right = current
-    last_list_node = current
+    current.left = last_list_node[0]
+    if last_list_node[0] is not None:
+        last_list_node[0].right = current
+    last_list_node[0] = current
 
     if current.right is not None:
         convert_node(current.right, last_list_node)
+
+
+# TODO test
 
 
 if __name__ == '__main__':
