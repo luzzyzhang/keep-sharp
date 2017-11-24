@@ -9,8 +9,6 @@
 
 
 class Node:
-    """结点
-    """
     def __init__(self, x):
         self.val = x
         self.left = None
