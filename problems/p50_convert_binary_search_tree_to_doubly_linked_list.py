@@ -15,12 +15,18 @@ class Node:
         self.left = None
         self.right = None
 
+    def __repr__(self):
+        return 'Node({!r}, {!r}, {!r})'.format(self.val, self.left, self.right)
+
 
 class LinkNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
+    def __repr__(self):
+        return 'LinkNode({!r}, {!r}, {!r})'.format(self.val, self.left, self.right)
 
 
 def convert_bst_to_doubly_linked_list(root):
@@ -60,6 +66,6 @@ if __name__ == '__main__':
 
     root = node10
     head = convert_bst_to_doubly_linked_list(root)
-    # while head:
-    #     print(head.val)
-    #     head = head.right
+    while head:
+        print(head)
+        head = head.right
