@@ -26,20 +26,29 @@ def read_stream(stream, numbers):
 
     if not stream:
         return False
-    numbers = [char for line in stream for char in line]
-    return numbers
+    numbers = [line.replace(',', ' ').replace('$', ' ').split() for line in stream]
+    return [int(n) for number in numbers for n in number]
 
 
 def deserialize(root, stream):
-    root = Node(None)
-    root.val = numbers[0]
+    if not stream:
+        return []
+    numbers = [line.replace(',', ' ').replace('$', ' ').split() for line in stream]
+    numbers = [int(n) for number in numbers for n in number]
+    if numbers:
+        root.val = numbers[0]
 
-    deserialize(root.left, stream)
-    deserialize(root.right, stream)
+        deserialize(root.left, stream)
+        deserialize(root.right, stream)
 
 
 if __name__ == '__main__':
     node1, node2, node3 = Node(1), Node(2), Node(3)
     node1.left, node1.right = node2, node3
-    with open('test.txt', 'w') as f:
-        serialize(node1, f)
+    # with open('test.txt', 'w') as f:
+    #     serialize(node1, f)
+    root = Node(None)
+    with open('test.txt', 'r') as f:
+        # print(read_stream(f, []))
+        deserialize(root, f)
+    print(root.val, root.left, root.right)
