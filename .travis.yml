@@ -3,4 +3,13 @@ python:
     - "3.4"
     - "3.5"
     - "3.6"
+jobs:
+  include:
+    - stage: test
+      script:
+        - |
+          if [[ "$TRAVIS_PYTHON_VERSION" != "2.6" ]] ; then make test-readme; fi
+        - make ci
+    - stage: coverage
+      python: 3.6
 
