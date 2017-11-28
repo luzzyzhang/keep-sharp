@@ -3,6 +3,14 @@ python:
     - "3.4"
     - "3.5"
     - "3.6"
+# command to install dependencies
+install: "make"
+# command to run tests
+script:
+  - |
+    if [[ "$TRAVIS_PYTHON_VERSION" != "2.6" ]] ; then make test-readme; fi
+  - make ci
+cache: pip
 jobs:
   include:
     - stage: test
@@ -12,4 +20,5 @@ jobs:
         - make ci
     - stage: coverage
       python: 3.6
+      script: codecov
 
