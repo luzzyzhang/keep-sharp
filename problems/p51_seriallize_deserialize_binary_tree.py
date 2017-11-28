@@ -22,19 +22,28 @@ def serialize(root, stream):
     serialize(root.right, stream)
 
 
-def read_stream(stream, numbers):
+def read_stream(stream):
 
     if not stream:
         return False
-    numbers = [line.replace(',', ' ').replace('$', ' ').split() for line in stream]
-    return [int(n) for number in numbers for n in number]
+    numbers = [line.replace(',', ' ').split() for line in stream]
+    return [n for number in numbers for n in number]
 
 
-def deserialize(root, stream):
-    root.val = numbers[0]
+def deserialize(data, stream):
+    numbers = read_stream(stream)
+    return build_tree(numbers)
 
-    deserialize(root.left, stream)
-    deserialize(root.right, stream)
+
+def build_tree(numbers):
+    print(numbers)
+    val = numbers.pop(0)
+    if val == '$':
+        return None
+    node = Node(val)
+    node.left = build_tree(numbers)
+    node.right = build_tree(numbers)
+    return node
 
 
 if __name__ == '__main__':
