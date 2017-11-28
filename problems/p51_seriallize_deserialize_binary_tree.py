@@ -31,15 +31,10 @@ def read_stream(stream, numbers):
 
 
 def deserialize(root, stream):
-    if not stream:
-        return []
-    numbers = [line.replace(',', ' ').replace('$', ' ').split() for line in stream]
-    numbers = [int(n) for number in numbers for n in number]
-    if numbers:
-        root.val = numbers[0]
+    root.val = numbers[0]
 
-        deserialize(root.left, stream)
-        deserialize(root.right, stream)
+    deserialize(root.left, stream)
+    deserialize(root.right, stream)
 
 
 if __name__ == '__main__':
