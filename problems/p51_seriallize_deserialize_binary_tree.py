@@ -12,6 +12,9 @@ class Node:
         self.left = None
         self.right = None
 
+    def __repr__(self):
+        return 'Node({})'.format(self.val)
+
 
 def serialize(root, stream):
     if root is None:
@@ -54,5 +57,5 @@ if __name__ == '__main__':
     root = Node(None)
     with open('test.txt', 'r') as f:
         # print(read_stream(f, []))
-        deserialize(root, f)
+        root = deserialize(root, f)
     print(root.val, root.left, root.right)
