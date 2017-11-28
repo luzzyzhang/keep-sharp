@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/luzzyzhang/keep-sharp.svg?branch=master)](https://travis-ci.org/luzzyzhang/keep-sharp)
 # Keep Sharp 
 > Practice makes perfect! 日常练习，保持锋利
 
