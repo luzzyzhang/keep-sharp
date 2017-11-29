@@ -37,7 +37,7 @@ def get_least_use_heap(numbers, k):
 
 
 def get_least_use_heap2(numbers, k):
-    h = []  # 维护长度不大于 k 的容器保存最小的k个元素`
+    h = []  # 维护长度不大于 k 的容器保存最小的k个元素
     for num in numbers:
         if len(h) < k:
             heapq.heappush(h, -num)
