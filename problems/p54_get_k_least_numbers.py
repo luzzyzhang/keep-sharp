@@ -44,6 +44,7 @@ def get_least_use_heap2(numbers, k):
         else:
             largest = -h[0]
             if num < largest:
+                # h中最大被弹出，并且新元素推入
                 heapq.heapreplace(h, -num)
     return [-heapq.heappop(h) for i in range(len(h))][::-1]
 
