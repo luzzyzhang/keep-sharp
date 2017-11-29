@@ -4,6 +4,8 @@
     ~~~~~~~~~~
     输入n个整数，找出其中最小的k个数。例如输入4、5、1、6、2、7、3、8
     这8个数字，则最小的4个数字是1、2、3、4。
+    ~~~~~~~~~~
+    https://docs.python.org/3/library/heapq.html
 """
 
 import heapq
@@ -38,13 +40,12 @@ def get_least_use_heap2(numbers, k):
     h = []
     for num in numbers:
         if len(h) < k:
-            heapq.heappush(h, num)
+            heapq.heappush(h, -num)
         else:
-            greatest = h[-1]
+            greatest = -h[0]
             if num < greatest:
-                print(h.pop())
-                heapq.heappush(h, num)
-    return [heapq.heappop(h) for _ in range(len(h))]
+                heapq.heapreplace(h, -num)
+    return [-heapq.heappop(h) for i in range(len(h))][::-1]
 
 
 if __name__ == '__main__':
