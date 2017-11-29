@@ -42,8 +42,8 @@ def get_least_use_heap2(numbers, k):
         if len(h) < k:
             heapq.heappush(h, -num)
         else:
-            greatest = -h[0]
-            if num < greatest:
+            largest = -h[0]
+            if num < largest:
                 heapq.heapreplace(h, -num)
     return [-heapq.heappop(h) for i in range(len(h))][::-1]
 
