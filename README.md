@@ -17,7 +17,7 @@
 12. [调整数组顺序使奇数位于偶数前面](problems/p37_reorder_odd_even_array.py)
 13. [顺时针打印矩阵](problems/p43_print_matrix_clock_wise.py)
 14. [字符串排列](problems/p52_permutation.py)
-15. [数组中出现次数超过一半的数字](problems/p53_more_than_half_number.py)
+15. [数组中出现次数超过一半的数字](problems/p53_more_than_half_numbers.py)
 ### 链表相关问题
 1. [反转单向链表](problems/p03_reverse_single_linked_list.py)
 2. [合并两个有序链表](problems/p04_merge_two_sorted_link_lists.py)
