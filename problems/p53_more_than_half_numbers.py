@@ -30,6 +30,25 @@ def more_than_half_num(numbers):
     return result
 
 
+# Approach 2
+def more_than_half_num2(numbers):
+    length = len(numbers)
+    result = numbers[0]
+    times = 1
+
+    for i in range(1, length):
+        if times == 0:
+            result = numbers[i]
+            times = 1
+        elif numbers[i] == result:
+            times += 1
+        else:
+            times -= 1
+    if not is_more_than_half(numbers, length, result):
+        result = 0
+    return result
+
+
 def is_more_than_half(numbers, length, num):
     times = 0
     for i in range(length):
@@ -43,3 +62,5 @@ if __name__ == '__main__':
     numbers1 = [1, 2, 3, 2, 4, 2, 5, 2, 3]
     assert more_than_half_num(numbers) == 2
     assert more_than_half_num(numbers1) == 0
+    assert more_than_half_num2(numbers) == 2
+    assert more_than_half_num2(numbers1) == 0
