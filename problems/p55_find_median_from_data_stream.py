@@ -40,7 +40,10 @@ class MedianFinder:
 if __name__ == '__main__':
     obj = MedianFinder()
     obj.add_num(1)
+    print(obj.find_median())
     obj.add_num(2)
+    print(obj.find_median())
     obj.add_num(3)
-    rv = obj.find_median()
-    print(rv)
+    print(obj.find_median())
+    obj.add_num(4)
+    print(obj.find_median())
