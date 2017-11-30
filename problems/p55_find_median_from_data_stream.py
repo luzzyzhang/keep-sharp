@@ -7,6 +7,14 @@
 
 
 class MedianFinder:
+    """Approach 1:
+    Store the numbers in a resize-able container. 
+    Every time you need to output the median,
+    sort the container and output the median.
+
+    * Time complexity: O(n*log(n))
+    * Space complexity: O(n)
+    """
 
     def __init__(self):
         """Initialize data structure here.
