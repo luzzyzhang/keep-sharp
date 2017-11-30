@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+"""
+    Find median from data stream.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    https://leetcode.com/problems/find-median-from-data-stream/description/
+"""
+
+
+class MedianFinder:
+
+    def __init__(self):
+        """Initialize data structure here.
+        """
+        self.store = []
+
+    def add_num(self, num):
+        """
+        :type num: int
+        :rtype: void
+        """
+        self.store.append(num)
+
+    def find_median(self):
+        """
+        :rtype: float
+        """
+        self.store.sort()
+        n = len(self.store)
+        return self.store[n//2] if n & 1 else (self.store[n//2 - 1] + self.store[n//2])*0.5
+
+
+if __name__ == '__main__':
+    obj = MedianFinder()
+    obj.add_num(1)
+    obj.add_num(2)
+    obj.add_num(3)
+    rv = obj.find_median()
+    print(rv)
