@@ -6,7 +6,6 @@
 def largest_sum_of_subarray(numbers):
     if not numbers:
         return 0
-    length = len(numbers)
     current_sum = 0
     largest_sum = float('-inf')
 
