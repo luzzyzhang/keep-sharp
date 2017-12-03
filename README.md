@@ -22,6 +22,7 @@
 17. [数据流中的中位数](problems/p55_find_median_from_data_stream.py)
 18. [连续子数组的最大和](problems/p56_sum_of_subarry.py)
 19. [从1到n整数中1出现的次数](problems/p57_number_of_digit_one.py)
+20. [字符串中第一个只出现一次的字符](problems/p60_first_no_repeat_char.py)
 ### 链表相关问题
 1. [反转单向链表](problems/p03_reverse_single_linked_list.py)
 2. [合并两个有序链表](problems/p04_merge_two_sorted_link_lists.py)
