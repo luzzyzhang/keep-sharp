@@ -66,6 +66,7 @@
 1. [剪绳子](problems/p30_cutting_rope_max_product.py)
 2. [找零钱](problems/p31_coin_change.py)
 3. [正则表达式匹配-动态规划解法](problems/p35_regex_match.py#L34)
+4. [礼物的最大价值](problems/p58_get_max_value_of_gifts.py)
 ### 其它
 1. [单例](problems/p01_singleton.py)
 2. [斐波那契数列](problems/p11_fibonacci.py)
