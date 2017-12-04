@@ -24,6 +24,7 @@
 19. [从1到n整数中1出现的次数](problems/p57_number_of_digit_one.py)
 20. [字符串中第一个只出现一次的字符](problems/p60_first_no_repeat_char.py)
 21. [数组中的逆序对](problems/p61_inverse_pairs.py)
+22. [数字在排序数组中出现的次数-二分查找](problems/p61_inverse_pairs.py)
 ### 链表相关问题
 1. [反转单向链表](problems/p03_reverse_single_linked_list.py)
 2. [合并两个有序链表](problems/p04_merge_two_sorted_link_lists.py)
