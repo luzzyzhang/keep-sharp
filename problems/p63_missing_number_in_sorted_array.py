@@ -32,6 +32,32 @@ def get_missing_number_by_binary_search(array):
     return left if (left == len(array)) else -1
 
 
+# 数组中数值和下标相等的元素
+
+# 假设一个单调递增的数组里的每个元素都是整数并且是唯一的。请编程实
+# 现一个函数找出数组中任意一个数值等于其下标的元素。
+# 例如，在数组{-3, -1, 1, 3, 5}中，数字3和它的下标相等。
+# O(n)
+def solution1(array):
+    for i, v in enumerate(array):
+        if i == v:
+            return i
+    return -1
+
+
+# 二分查找O(log(n))
+def solution2(array):
+    left, right = 0, len(array)-1
+    while left < right:
+        middle = (left + right) // 2
+        if array[middle] == middle:
+            return middle
+        if array[middle] > middle:
+            right = middle - 1
+        else:
+            left = middle + 1
+
+
 if __name__ == '__main__':
     array = [0, 1, 2, 4, 5]
     expect = 3
