@@ -53,6 +53,7 @@
 11. [二叉树中为某一值的路径](problems/p48_path_sum_in_binary_tree.py)
 12. [二叉搜索树与双向链表](problems/p50_convert_binary_search_tree_to_doubly_linked_list.py)
 13. [二叉树序列化和反序列化](problems/p51_seriallize_deserialize_binary_tree.py)
+14. [二叉搜索树的第K大节点](problems/p64_kth_largest_node_in_bst.py)
 
 ### 栈和队列类问题
 1. [两个栈实现一个队列](problems/p23_two_stack_build_queue.py)
