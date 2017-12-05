@@ -26,6 +26,7 @@
 21. [数组中的逆序对](problems/p61_inverse_pairs.py)
 22. [数字在排序数组中出现的次数-二分查找](problems/p62_number_of_k.py)
 23. [0~n-1中缺失的数字](problems/p63_missing_number_in_sorted_array.py)
+24. [数组中数字出现的次数](problems/p66_num_apears_in_array.py)
 ### 链表相关问题
 1. [反转单向链表](problems/p03_reverse_single_linked_list.py)
 2. [合并两个有序链表](problems/p04_merge_two_sorted_link_lists.py)
