@@ -28,7 +28,7 @@
 23. [0~n-1中缺失的数字](problems/p63_missing_number_in_sorted_array.py)
 24. [数组中数字出现的次数](problems/p66_num_apears_in_array.py)
 25. [数组中找和](problems/p67_find_sum_in_array.py)
-26. [翻转字符-翻转单词](problems/)
+26. [翻转字符-翻转单词](problems/p68_reverse_words.py)
 ### 链表相关问题
 1. [反转单向链表](problems/p03_reverse_single_linked_list.py)
 2. [合并两个有序链表](problems/p04_merge_two_sorted_link_lists.py)
