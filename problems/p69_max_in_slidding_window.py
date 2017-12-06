@@ -20,20 +20,22 @@ def max_in_slid_window(array, size):
 
 def max_in_slide_window2(array, size):
     queue = deque()
-    max_in_window = []
+    # max_in_window = []
     for i in range(size):
         while queue and array[i] >= array[queue[-1]]:
             queue.pop()
         queue.append(i)
     for i in range(size, len(array)):
-        max_in_window.append(array[queue[0]])
+        yield array[queue[0]]
+        # max_in_window.append(array[queue[0]])
         while queue and array[i] >= array[queue[-1]]:
             queue.pop()
         if queue and queue[0] <= i-size:
             queue.popleft()
         queue.append(i)
-    max_in_window.append(array[queue[0]])
-    return max_in_window
+    # max_in_window.append(array[queue[0]])
+    # return max_in_window
+    yield array[queue[0]]
 
 
 if __name__ == '__main__':
