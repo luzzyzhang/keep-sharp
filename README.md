@@ -64,6 +64,7 @@
 2. [两个队列实现一个栈](problems/p24_two_queue_build_stack.py)
 3. [包含min函数的栈](problems/p44_min_stack.py)
 4. [栈的压入、弹出顺序](problems/p45_stack_push_pop_order.py)
+5. [队列最大值-滑动窗口最大值](problems/p69_max_in_slidding_window.py)
 ### 查找和排序类问题
 1. [年龄排序](problems/p25_sort_ages.py)
 2. [旋转数组的最小数字](problems/p26_search_min_in_roate_numbers.py)
