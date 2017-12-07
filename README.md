@@ -83,3 +83,4 @@
 2. [斐波那契数列](problems/p11_fibonacci.py)
 3. [数值的整数次方](problems/p32_power.py)
 4. [丑数](problems/p59_ugly_numbers.py)
+5. [不用加减乘除做加法](problems/p71_addtion_operation_use_bit_operate.py)
